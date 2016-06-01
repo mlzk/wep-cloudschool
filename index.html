@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- 禁止横屏 -->
+        <metaname="x5-orientation"content="portrait">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta charset="utf-8">
+        <title>云学院</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- 主要库文件-重置样式 -->
+        <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- 图标字体 -->
+        <link rel="stylesheet" href="css/weui.css"/>
+        <!--  <link rel="stylesheet" href="./example.css"/> -->
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+        <!-- 焦点图 -->
+        <link rel="stylesheet" href="css/index.css" />
+        
+     
+       
+    </head>
+    <body ontouchstart>
+    <nav id="menu" class="menu">
+      <div class="user-avatar">
+          <a href=""><img src="images/user-tor.png" alt="" /></a>
+          <h3 class="menu-section-title"><a href="">未登录</a></h3>
+           <!-- <h3 class="menu-section-title color-logined"><a href="">会写诗的猫</a></h3> --><!--   注册用户颜色 -->
+           <!-- <h3 class="menu-section-title color-vip"><a href="">会写诗的猫</a></h3> --> <!-- 会员颜色  -->
+          <p class="sys-vip-o">游客</p>
+       <!--     <p class="sys-vip-o">普通用户</p> 
+                <p class="sys-vip-o">注册会员</p> -->
+         
+      </div>
+
+      <section class="menu-section" style="overflow-y:scroll;height: 65% ;border-top:1px solid #444;">
+       
+        <ul class="menu-section-list">
+          <li><a href="" target="_blank"><i class="fa fa-sign-in"></i><span>登录/注册</span><i class="fa fa-angle-right arr-right"></i></a></li>
+          
+          <li><a href="" target="_blank"><i class="fa fa-user"></i><span>成为VIP会员</span><i class="fa fa-angle-right arr-right"></i></a></li>
+          <!-- <li><a href="" target="_blank"><i class="fa fa-user"></i><span>申请进度</span><i class="fa fa-angle-right arr-right"></i></a></li> -->
+          <!-- 如果用户点击了“成为VIP会员”并且成功申请则隐藏掉这个“成为VIP会员”显示“申请进度”选项 -->
+          <!-- 如果申请失败-必须由用户点击一次“申请进度”选项才能隐藏重新复位“成为VIP会员”选项 -->
+          <li><a href="精品课程.html" target="_blank"><i class="fa fa-youtube-play"></i><span>精品课程</span><i class="fa fa-angle-right arr-right"></i></a></li>
+           <li><a href="专家讲师.html" target="_blank"><i class="fa fa-users"></i><span>专家讲师</span><i class="fa fa-angle-right arr-right"></i></a></li>
+         
+           <li><a href="" target="_blank"><i class="fa fa-wechat"></i><span>微课直播</span><i class="fa fa-angle-right arr-right"></i></a></li>
+          <li><a href="我的收藏.html" target="_blank"><i class="fa fa-heart"></i><span>我的收藏</span><i class="fa fa-angle-right arr-right"></i></a></li>
+          
+        
+        </ul>
+      </section>
+      <section style="display:block" class="menu-section nav-sign-out">
+          <ul class="menu-section-list">
+          <li><a href="javascript:;" target="_blank"><i class="fa fa-sign-out"></i><span>退出</span><i class="fa fa-angle-right arr-right"></i></a></li>
+          </ul>
+      </section>
+
+       
+    </nav>
+<div style="width:100%;height:100%;overflow:hidden; position:absolute;">
+<div id="panel"style="width:100%;height:100%;overflow:hidden;">
+    <nav class="bar bar-tab">
+        <a class="tab-item active" href="javascript:;"><span class="fa fa-home"></span><span class="tab-label">首页</span></a>
+        <a class="tab-item" href="精品课程.html"><span class="fa fa-youtube-play"></span><span class="tab-label">精品课程</span></a>
+        <a class="tab-item" href="专家讲师.html"><span class="fa fa-users"></span><span class="tab-label">专家讲师</span></a>
+         <a class="tab-item" href="javascript:;"><span class="fa fa-mortar-board"></span><span class="tab-label">加入会员</span></a>
+    </nav>
+    <div  class="page-box">
+  <header>
+  <a class="top-menu" href="javascript:;"><i class="fa fa-navicon"></i></a>
+  <span>云学院</span>
+  <!-- 第二个A暂时不做处理，这里用来占位 -->
+  <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-search"></i></a>
+  </header> 
+      
+   <div class="swiper-container" style="width:100%;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slider-1"><a class="banner-img-box" href=""><img src="images/banner6.png"  alt="" /></a></div>
+        <div class="swiper-slide slider-2"><a class="banner-img-box" href=""><img src="images/banner1.png"  alt="" /></a></div>
+        <div class="swiper-slide slider-3"><a class="banner-img-box" href=""><img src="images/banner6.png"  alt="" /></a></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination fixed-postion"></div>
+    </div>
+
+
+        <div class="nav2">
+            <a href="精品课程.html">
+                <i class="fa fa-bullseye"></i>
+                <span>课程预告</span>
+            </a>
+            <div></div>
+            <a href="">
+                <i class="fa fa-mortar-board"></i>
+                <span>加入会员</span>
+            </a>
+            <div></div>
+            <a href="">
+                <i class="fa fa-user"></i>
+                <span>讲师团</span>
+            </a>
+        </div>
+    <section>
+    <div class="content-box">
+    <a href="专家讲师.html">
+        <img src="images/big-ban-1.png" alt="" />
+    </a>
+    </div>
+    <div class="content-box">
+    <a href="精品课程.html">
+        <img src="images/big-ban-2.png" alt="" />
+    </a>
+    </div>
+    <div class="content-box">
+    <a href="">
+        <img src="images/big-ban-3.png" alt="" />
+    </a>
+    </div>
+    <div class="content-box">
+    <a href="在线视频.html">
+        <img src="images/big-ban-4.png" alt="" />
+    </a>
+    </div>
+    </section>
+    <div class="text-more"><p>更多内容，敬请期待...</p></div>
+    </div></div>
+<!-- 滚动盒子 ？ -->
+</div>
+    </body>
+<script src="js/swiper-3.2.7.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/slideout.js"></script>
+
+<script> 
+//DOM加载完成后执行确保无闪烁
+window.onload=function(){ 
+
+//轮播图      
+  var mySwiper = new Swiper ('.swiper-container', {
+    touchRatio : 0.5,
+    pagination : '.swiper-pagination',
+    paginationHide :true,
+    autoplay : 3000,
+    loop : true,
+    autoplayDisableOnInteraction : true,
+});
+//侧滑菜单  
+  $("#menu").css({"display": 'block'});
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'touch':false,
+  });
+
+  document.querySelector('.top-menu').addEventListener('click', function() {
+    slideout.toggle();
+
+  });
+
+//动画
+  function animateList(){
+        var items = $(".content-box a");
+
+            for(var i=0; i<items.length; i++) {
+
+                var item = items.eq(i);
+
+               
+                  function a(item,i){
+                    var $this = items.eq(i);
+                    item.css({
+                    "opacity":"1",
+                    "webkitTransform":"translateY(0px)",
+                    }); 
+                   
+                  }
+                  var time = 400+i*400; 
+
+                   setTimeout(function(){a(items,item)},time); //通用 
+                   
+             
+            }
+
+};
+animateList()
+}
+  </script>
+  
+</html>

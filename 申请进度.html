@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="cache-control" content="no-cache">
+        <!-- 禁止横屏 -->
+        <metaname="x5-orientation"content="portrait">
+        <meta charset="utf-8">
+        <title>申请进度</title>
+           <!-- weUI -->
+        <link rel="stylesheet" href="css/weui.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- 主要库文件-重置样式 -->
+        <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- 图标字体 -->
+        <link rel="stylesheet" href="css/weui.css"/>
+        <!--  <link rel="stylesheet" href="./example.css"/> -->
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+        <!-- 焦点图 -->
+        <link rel="stylesheet" href="css/index.css" />
+
+        
+     
+       
+    </head>
+    <body ontouchstart>
+
+<div style="width:100%;height:100%;overflow:hidden; position:absolute;">
+<div id="panel"style="width:100%;height:100%;overflow:hidden;">
+    <nav class="bar bar-tab">
+        <a class="tab-item active" href="javascript:;"><span class="fa fa-home"></span><span class="tab-label">首页</span></a>
+        <a class="tab-item" href="javascript:;"><span class="fa fa-youtube-play"></span><span class="tab-label">精品课程</span></a>
+        <a class="tab-item" href="javascript:;"><span class="fa fa-users"></span><span class="tab-label">专家讲师</span></a>
+         <a class="tab-item" href="javascript:;"><span class="fa fa-mortar-board"></span><span class="tab-label">加入会员</span></a>
+    </nav>
+    <div  class="page-box" style="background:#fff;">
+     <header>
+  <a  class="top-menu" href="javascript:;"><i class="fa fa-chevron-left"></i></a>
+  <span>申请进度</span>
+ 
+  <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-star-o"></i>
+  <!-- 下面的是点击了喜欢的样子替换I标签 -->
+  <!-- <i  class="fa fa-star"></i> --> 
+  </a>
+  </header>  
+      <!-- 内容 start -->
+      <section style="padding-top:0.8rem;">
+        
+       <a id="take-meb-q" href="javascript:;"><img src="images/banner-meb.png" alt="" /></a>
+
+        <div class="apply-statu">
+        <!-- 成功状态 --> <!-- 后台审核，并且付款之后返回成功 -->
+
+         <!-- <i class="weui_icon_safe weui_icon_safe_success"></i>
+          <p>您已经成为我们的会员单位！<br><span>尽情享受我们为您提供的会员专属权益吧！</span></p> -->
+
+         
+        <!-- 等待审核状态 --><!-- 后台审核无返回值--> 
+
+          <i class="weui_icon_msg weui_icon_waiting"></i>
+          <p>审核中<br><span>申请已提交，请耐心等待审核结果！</span></p>
+     
+      <!-- 审核结束 --><!-- 后台联系确认用户暂时无意向 -->
+
+        <!--  <i class="weui_icon_safe weui_icon_safe_warn"></i>
+         <p>审核结束<br><span>您暂未成为我们的会员单位</span></p>
+         <a href="">再次提交申请</a> -->
+
+
+
+
+        </div>
+      </section>
+
+      <!-- 内容 end -->
+    </div></div>
+<!-- 滚动盒子 ？ -->
+</div>
+    </body>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/layer/layer.js"></script>
+
+<script> 
+//DOM加载完成后执行确保无闪烁
+window.onload=function(){
+
+  var html = "<div class=\"meb-wrap\"><img src=\"images/会员权益.png\" alt=\"\" /></div><div class=\"meb-btn-wrap\"><a class=\"close-btn\" href=\"javascript:;\">我知道啦</a></div>"
+  
+  $("#b-sub-btn").click(function(){
+   layer.open({
+    content: '提交成功！',
+    style: ' padding:20px 0;',
+    time: 2
+  });
+
+  });
+
+  $("#take-meb-q").click(function(){
+   layer.open({
+    content: html,
+        style: ' width:95%; height:70%; border:none;padding:0;margin:0;border-radius:5px;overflow:hidden'
+  });
+      $(".close-btn").on('click',function(){
+
+        layer.closeAll();
+    
+      })
+  });
+
+  }
+
+
+  </script>
+  
+</html>

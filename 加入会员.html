@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="cache-control" content="no-cache">
+        <!-- 禁止横屏 -->
+        <metaname="x5-orientation"content="portrait">
+        <meta charset="utf-8">
+        <title>申请成为会员单位</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- 主要库文件-重置样式 -->
+        <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- 图标字体 -->
+        <link rel="stylesheet" href="css/weui.css"/>
+        <!--  <link rel="stylesheet" href="./example.css"/> -->
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+        <!-- 焦点图 -->
+        <link rel="stylesheet" href="css/index.css" />
+        
+     
+       
+    </head>
+    <body ontouchstart>
+
+<div style="width:100%;height:100%;overflow:hidden; position:absolute;">
+<div id="panel"style="width:100%;height:100%;overflow:hidden;">
+    <nav class="bar bar-tab">
+        <a class="tab-item active" href="javascript:;"><span class="fa fa-home"></span><span class="tab-label">首页</span></a>
+        <a class="tab-item" href="javascript:;"><span class="fa fa-youtube-play"></span><span class="tab-label">精品课程</span></a>
+        <a class="tab-item" href="javascript:;"><span class="fa fa-users"></span><span class="tab-label">专家讲师</span></a>
+         <a class="tab-item" href="javascript:;"><span class="fa fa-mortar-board"></span><span class="tab-label">加入会员</span></a>
+    </nav>
+    <div  class="page-box" style="background:#fff;">
+     <header>
+  <a  class="top-menu" href="javascript:;"><i class="fa fa-chevron-left"></i></a>
+  <span>会员单位申请表</span>
+ 
+  <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-star-o"></i>
+  <!-- 下面的是点击了喜欢的样子替换I标签 -->
+  <!-- <i  class="fa fa-star"></i> --> 
+  </a>
+  </header>  
+      <!-- 内容 start -->
+      <section style="padding-top:0.8rem;">
+        
+      <a id="take-meb-q" href="javascript:;"><img src="images/banner-meb.png" alt="" /></a>
+      <form action="">
+        
+        <div class="b-in-wrap">
+          <div class="left-b">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="right-b">
+            <input type="text" placeholder="姓名" />
+          </div>
+          <div style="clear:both"></div>
+
+        </div>
+        <div class="b-in-wrap">
+          <div class="left-b">
+             <i class="fa fa-phone"></i>
+          </div>
+          <div class="right-b">
+            <input type="text" placeholder="联系方式" />
+          </div>
+          <div style="clear:both"></div>
+
+        </div>
+
+        <div class="b-in-wrap">
+          <div class="left-b">
+            <i class="fa fa-wechat"></i>
+          </div>
+          <div class="right-b">
+            <input type="text" placeholder="微信账号" />
+          </div>
+          <div style="clear:both"></div>
+        </div>
+        <div class="b-in-wrap">
+          <div class="left-b">
+           <i class="fa fa-building-o"></i>
+          </div>
+          <div class="right-b">
+            <input type="text" placeholder="公司名称" />
+          </div>
+          <div style="clear:both"></div>
+
+        </div>
+        <div class="b-in-wrap">
+          <div class="left-b">
+            <i class="fa fa-certificate"></i>
+          </div>
+          <div class="right-b">
+            <input type="text" placeholder="请输入您在公司的职位" />
+          </div>
+          <div style="clear:both"></div>
+
+        </div>
+          <div class="b-in-wrap-btn">
+
+              <a id="b-sub-btn" href="javascript:;">提交</a>
+              <!-- 成功之后跳转审核进度页面 -->
+
+        </div>
+        <div class="b-atation"><p class="pp-1"><span>注意:</span>提交之后工作人员会尽快与您联系;您也可以直接拨打以下电话:</p>
+      
+        <p class="pp-2"><span>张老师:</span>010-57286489</p>
+        <p class="pp-2"><span>刘老师:</span>010-57286490</p></div>
+      </form>
+    
+</section>
+
+      <!-- 内容 end -->
+    </div></div>
+<!-- 滚动盒子 ？ -->
+</div>
+    </body>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/layer/layer.js"></script>
+
+<script> 
+//DOM加载完成后执行确保无闪烁
+window.onload=function(){
+
+  var html = "<div class=\"meb-wrap\"><img src=\"images/会员权益.png\" alt=\"\" /></div><div class=\"meb-btn-wrap\"><a class=\"close-btn\" href=\"javascript:;\">我知道啦</a><a class=\"meb-done-btn\" href=\"javascript:;\">已是会员单位<i class=\"fa fafa-arrow-right\"></i></a></div>"
+  layer.open({
+    content: html,
+     style: ' width:95%; height:70%; border:none;padding:0;margin:0;border-radius:5px;overflow:hidden'
+  })
+   $(".close-btn").on('click',function(){
+
+    layer.closeAll();
+
+     })
+  $("#b-sub-btn").click(function(){
+   layer.open({
+    content: '提交成功！',
+    style: ' padding:20px 0;',
+    time: 2
+  });
+
+  });
+
+  $("#take-meb-q").click(function(){
+   layer.open({
+    content: html,
+     style: ' width:95%; height:70%; border:none;padding:0;margin:0;border-radius:5px;overflow:hidden'
+
+  });
+      $(".close-btn").on('click',function(){
+
+        layer.closeAll();
+    
+      })
+  });
+
+  }
+
+
+  </script>
+  
+</html>

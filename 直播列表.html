@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="cache-control" content="no-cache">
+        <!-- 禁止横屏 -->
+        <metaname="x5-orientation"content="portrait">
+        <meta charset="utf-8">
+        <title>直播列表</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- 主要库文件-重置样式 -->
+        <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- 图标字体 -->
+        <link rel="stylesheet" href="css/weui.css"/>
+        <!--  <link rel="stylesheet" href="./example.css"/> -->
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+        <!-- 焦点图 -->
+        <link rel="stylesheet" href="css/index.css" />
+        
+     
+       
+    </head>
+    <body ontouchstart>
+
+<div style="width:100%;height:100%;overflow:hidden; position:absolute;">
+<div id="panel"style="width:100%;height:100%;overflow:hidden;">
+    <nav class="bar bar-tab">
+        <a class="tab-item active" href="javascript:;"><span class="fa fa-home"></span><span class="tab-label">首页</span></a>
+        <a class="tab-item" href="javascript:;"><span class="fa fa-youtube-play"></span><span class="tab-label">精品课程</span></a>
+       
+        <a class="tab-item" href="javascript:;"><span class="fa fa-users"></span><span class="tab-label">专家讲师</span></a>
+         <a class="tab-item" href="javascript:;"><span class="fa fa-mortar-board"></span><span class="tab-label">加入会员</span></a>
+    </nav>
+    <div  class="page-box">
+    <header>
+  <a id="back-prev" class="top-menu" href="javascript:history.go(-1);"><i class="fa fa-chevron-left"></i></a>
+  <span>精品课程</span>
+  <!-- 第二个A暂时不做处理，这里用来占位 -->
+  <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-search"></i></a>
+  </header> 
+      
+        <ul style="box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);margin-top:-1px;-webkit-transform: translateZ(0);" class="tabSlider-hd class-tabs-2">
+                       <li class="curr">直播预告</li>
+                       <li>往期课程</li>
+                       
+                      
+                  </ul> 
+      <section style="height:80%;width:100%;overflow:scroll; position:relative;padding:0;"class="scroll" >
+   
+          <div style="overflow:hidden"    id="tabSlider2" class="tabSlider">   
+
+            <div  class="tabSlider-bd">     
+
+                <div class="tabSlider-wrap tabs-content-h">
+                    <!-- 预告 -->
+                    <div class="tabSlider-box cont-wrap-adj curr">
+                        <ul class="class-for-list">
+                         <li><img src="ex-img/class.png" alt="" /></li>
+                        </ul>
+                       
+                        
+                        
+
+                    </div>
+                    
+               
+           
+                    <!-- 往期 -->
+                    <div class="tabSlider-box cont-wrap-adj">
+                 
+                    <ul class="class-for-list">
+                         
+                            <li><span class="sys-class"></span><img src="ex-img/class.png" alt="" /></li>
+                          <li><span class="sys-class sys-vip"></span><img src="ex-img/class2.png" alt="" /></li>
+                          <li><span class="sys-class sys-vip2"></span><img src="ex-img/class2.png" alt="" /></li>
+                          <li><span class="sys-class sys-star"></span><img src="ex-img/class2.png" alt="" /></li>
+                           <li><span class="sys-class sys-freeontime"></span><img src="ex-img/class2.png" alt="" /></li>
+                        </ul>
+                       
+            
+               
+                  
+
+                    </div>
+                    <!-- 攻略 -->
+                    <div class="tabSlider-box cont-wrap-adj">
+                 
+                    
+                       
+            
+               
+                  
+
+                    </div>
+                </div>  
+
+            </div>
+
+    </div>
+ 
+  </section>
+
+  
+    </div></div>
+<!-- 滚动盒子 ？ -->
+</div>
+    </body>
+<script src="http://www.jq22.com/demo/tabslider-141213112423/zepto.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/tabslider.js"></script>
+<script> 
+//DOM加载完成后执行确保无闪烁
+window.onload=function(){ 
+
+
+$(function(){
+    app.TabSlider('#tabSlider2');
+    setTimeout(function(){$(".tabs-content-h").addClass('tabs-content-v');}, 400) 
+});
+
+};
+
+//动画
+
+  </script>
+  
+</html>
