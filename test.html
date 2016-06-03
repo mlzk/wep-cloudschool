@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="cache-control" content="no-cache">
+        <!-- 禁止横屏 -->
+        <metaname="x5-orientation"content="portrait">
+    </head>
+   <link rel="stylesheet" href="css/styles.css" />
+        <!-- 主要库文件-重置样式 -->
+        <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- 图标字体 -->
+        <link rel="stylesheet" href="css/weui.css"/>
+        <!--  <link rel="stylesheet" href="./example.css"/> -->
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+        <!-- 焦点图 -->
+        <link rel="stylesheet" href="http://mbcysxy.com/themes/default/Mobile/statics/mobile/css/index.css" />
+
+    <body>
+
+    <ul id="tabSlider_nav" class="tabSlider-hd class-tabs-4">
+        <li class="curr">tabs</li>
+        <li>tabs2</li>
+        <li>tabs3</li>
+        <li>tabs4</li>
+    </ul> 
+    <section style="height:80%;width:100%;">
+     <div id="tabSlider2" class="tabSlider">   
+
+        <div  class="tabSlider-bd">     
+            <div class="tabSlider-wrap tabs-content-h">
+                    <!-- 课程简介 -->
+                <div class="tabSlider-box wrapper cont-wrap-adj curr">
+                    <div class="scroller">
+                        <ul>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabSlider-box wrapper2 cont-wrap-adj">
+                 <div class="scroller">
+                        <ul>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="" class="tabSlider-box wrapper3 cont-wrap-adj">
+                   <div class="scroller">
+                        <ul>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="" class="tabSlider-box wrapper4 cont-wrap-adj">
+                    <div class="scroller">
+                        <ul>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                            <li>1234</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+<style>
+    .wrapper,.wrapper2,.wrapper3,.wrapper4{
+    background: #feeeee;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+     height:300px;
+    }
+   .tabSlider .tabSlider-bd .tabSlider-wrap .tabSlider-box{
+   
+    min-height: 0;
+   }
+    .scroller{
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    }
+</style>
+
+
+
+
+
+    </body>
+    <script src="http://www.jq22.com/demo/tabslider-141213112423/zepto.js"></script>
+    <script src="js/tabslider-test.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script>
+
+        myScroll = new IScroll('.wrapper', { mouseWheel: true });
+        myScroll = new IScroll('.wrapper2', { mouseWheel: true });
+        myScroll = new IScroll('.wrapper3', { mouseWheel: true });
+        myScroll = new IScroll('.wrapper4', { mouseWheel: true });
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+    </script>
+<script> 
+
+    window.onload=function(){ 
+
+        $(function(){
+        app.TabSlider('#tabSlider2','#tabSlider_nav');
+        setTimeout(function(){$(".tabs-content-h").addClass('tabs-content-v');}, 400);
+
+        });
+    };
+
+</script>
+</html>

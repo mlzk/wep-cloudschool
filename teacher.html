@@ -18,15 +18,37 @@
         <!--  <link rel="stylesheet" href="./example.css"/> -->
         <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
         <!-- 焦点图 -->
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="http://mbcysxy.com/themes/default/Mobile/statics/mobile/css/index.css" />
         
      
        
     </head>
-    <body ontouchstart>
+    <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", ready2, false);
+            document.addEventListener("touchmove", function(evt){
+                console.log("document.touchmove");
+                evt.preventDefault();
+            }, false);
+            
+            function ready2(){
+                var container = document.getElementsByClassName("scollpane")[0];
+                var subcontainer = container.children[0];
+                var subsubcontainer = container.children[0].children[0];
 
-<div style="width:100%;height:100%;overflow:hidden; position:absolute;">
-<div id="panel"style="width:100%;height:100%;overflow:hidden;">
+                container.addEventListener("touchmove", function(evt){
+                    if(subsubcontainer.getBoundingClientRect().height > subcontainer.getBoundingClientRect().height){
+                        evt.stopPropagation();
+                    }
+                }, false);
+
+                console.log(subsubcontainer.getBoundingClientRect().height);
+                console.log(subcontainer.getBoundingClientRect().height);
+            }
+        </script>
+    <body>
+
+
+
     <nav class="bar bar-tab">
         <a class="tab-item active" href="javascript:;"><span class="fa fa-home"></span><span class="tab-label">首页</span></a>
         <a class="tab-item" href="javascript:;"><span class="fa fa-youtube-play"></span><span class="tab-label">精品课程</span></a>
@@ -34,14 +56,14 @@
         <a class="tab-item" href="javascript:;"><span class="fa fa-users"></span><span class="tab-label">专家讲师</span></a>
          <a class="tab-item" href="javascript:;"><span class="fa fa-mortar-board"></span><span class="tab-label">加入会员</span></a>
     </nav>
-    <div  class="page-box">
+    <div class="page-box">
     <header>
   <a id="back-prev" class="top-menu" href="javascript:;"><i class="fa fa-chevron-left"></i></a>
   <span>专家讲师</span>
   <!-- 第二个A暂时不做处理，这里用来占位 -->
   <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-search"></i></a>
   </header> 
-      
+
         <ul style="box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);margin-top:-1px;-webkit-transform: translateZ(0);" class="tabSlider-hd class-tabs-4">
                        <li class="curr">讲师</li>
                        <li>专家</li>
@@ -49,15 +71,14 @@
                        <li>顾问</li>
                       
                   </ul> 
-      <section style="height:80%;width:100%;overflow:scroll; position:relative;padding:0;"class="scroll" >
+      <section style="height:80%;width:100%;overflow-y: auto;-webkit-overflow-scrolling: touch;" class=" scollpane">
    
-          <div style="overflow:hidden"    id="tabSlider2" class="tabSlider">   
+          <div style="position:relative;height:100%;overflow-y: auto;" id="tabSlider2" class="tabSlider">   
 
-            <div  class="tabSlider-bd">     
-
-                <div class="tabSlider-wrap tabs-content-h">
+        <div  class="tabSlider-bd">     
+         <div class="tabSlider-wrap tabs-content-h">
                     <!-- 课程简介 -->
-                    <div class="tabSlider-box cont-wrap-adj curr">
+                    <div style="" class="tabSlider-box cont-wrap-adj curr">
                     
                         <div class="pro-avt">
                                 <div class="pro-avatar">
@@ -201,6 +222,134 @@
                                 </div>
                                 <div style="clear:both"></div>
                         </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                         <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>宗淑琦</h3><span class="badge badge-type-4">专家</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
                        
             
                
@@ -249,9 +398,23 @@
                                 </div>
                                 <div style="clear:both"></div>
                         </div>
-                       
-            
-               
+                      <div class="pro-avt">
+                                <div class="pro-avatar">
+                                <img src="images/t1.png" height="180" width="180" alt="" />
+                                </div>
+
+                                <div class="pro-name">
+                                    <div class="div-first">
+                                    <h3>黄飞</h3><span class="badge badge-type-3">顾问</span>
+                                    </div>
+                                <div>
+                                    <p>著名儿童营养专家，北京大学孕婴童产业升级课题组组长.</p>
+                                    <!-- 截取字符！！！！！32个最多 -->
+                                </div>
+                                </div>
+                                <div style="clear:both"></div>
+                        </div>
+                        
                   
 
                     </div>
@@ -264,23 +427,24 @@
   </section>
 
   
-    </div></div>
+    
 <!-- 滚动盒子 ？ -->
 </div>
     </body>
 <script src="http://www.jq22.com/demo/tabslider-141213112423/zepto.js"></script>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/layer/layer.js"></script>
-<script src="js/tabslider.js"></script>
+<script src="js/tabslider-list.js"></script>
 <script> 
 //DOM加载完成后执行确保无闪烁
 window.onload=function(){ 
 
-
-$(function(){
+    $(function(){
     app.TabSlider('#tabSlider2');
     setTimeout(function(){$(".tabs-content-h").addClass('tabs-content-v');}, 400) 
 });
+
+
 
 };
 

@@ -2,7 +2,7 @@
 * @Author: 会飞的猫
 * @Date:   2016-01-11 08:06:33
 * @Last Modified by:   会飞的猫
-* @Last Modified time: 2016-06-01 13:12:55
+* @Last Modified time: 2016-06-03 17:22:33
 */
 
 header{
@@ -172,7 +172,7 @@ transform: translate3d(0, 0, 0);}
 .btn-plus a i{margin-left: 5px;}
 /*tabs*/
 #wrapper {
-    margin:10px;
+   
     background: #fff;
 }
 * {-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;outline:0;-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent}
@@ -274,9 +274,10 @@ transform: translate3d(0, 0, 0);}
     left:0;
     width: 100%;
     min-height: 220px;
+
 }
 .tabSlider .tabSlider-bd .tabSlider-wrap .tabSlider-box {
-    padding:.2em;
+   /* padding:.2em;*/
 /*    padding-bottom: 2rem;*/
     -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
@@ -309,6 +310,7 @@ perspective: 1000;
 .pro-avt{
     width: 100%;
     margin: 0.6rem 0;
+    padding: 0 0.5rem;
 }
 
 .pro-avt .pro-avatar{    

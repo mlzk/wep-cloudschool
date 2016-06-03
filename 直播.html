@@ -40,8 +40,9 @@
   <!-- 第二个A暂时不做处理，这里用来占位 -->
   <a style="color:#25baff;"  class="top-search" href="javascript:;"><i  class="fa fa-search"></i></a>
   </header> 
-      <iframe src="http://m.qlchat.com/live/80000030002459.htm">
-
+      <!-- <iframe src="http://m.qlchat.com/live/80000030002459.htm"> -->
+      <iframe name="myFrame" id="iframe" src="http://www.meetbaby.cn/honey/portal/content/course.jsp?id=2250&from=singlemessage&isappinstalled=1
+">
     </iframe>
 
       <!-- 内容 end -->
@@ -74,7 +75,12 @@ window.onload=function(){
   });
 
   });
+ $(function(){
 
+$("#iframe").find("p .cangory").css("display","none");
+
+
+ })
 
 
 }
