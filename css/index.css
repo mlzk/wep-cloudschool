@@ -2,7 +2,7 @@
 * @Author: 会飞的猫
 * @Date:   2016-01-11 08:06:33
 * @Last Modified by:   会飞的猫
-* @Last Modified time: 2016-06-03 17:22:33
+* @Last Modified time: 2016-06-06 17:24:22
 */
 
 header{
@@ -172,7 +172,7 @@ transform: translate3d(0, 0, 0);}
 .btn-plus a i{margin-left: 5px;}
 /*tabs*/
 #wrapper {
-   
+    margin:10px;
     background: #fff;
 }
 * {-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;outline:0;-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent}
@@ -268,16 +268,19 @@ transform: translate3d(0, 0, 0);}
     width: 100%;
     min-height: 100%;
 }
+.cont-wrap-adj  img{
+    width:100%;
+    height:auto;
+}
 .tabSlider .tabSlider-bd .tabSlider-wrap .tabSlider-box {
     position:absolute;
     top:0; 
     left:0;
     width: 100%;
     min-height: 220px;
-
 }
 .tabSlider .tabSlider-bd .tabSlider-wrap .tabSlider-box {
-   /* padding:.2em;*/
+    padding:.2em;
 /*    padding-bottom: 2rem;*/
     -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
@@ -310,7 +313,6 @@ perspective: 1000;
 .pro-avt{
     width: 100%;
     margin: 0.6rem 0;
-    padding: 0 0.5rem;
 }
 
 .pro-avt .pro-avatar{    
@@ -417,6 +419,9 @@ perspective: 1000;
     font-size: .78rem;
     color: #888;
 }
+.text-wrap img{
+    width:100%;
+    height:auto;}
 .layermbtn span:first-child{
     background: none!important;
 }
@@ -504,7 +509,7 @@ p.share-p{text-align: center;font-size: 1rem;}
 .class-for-list li a, .class-for-list li{
     display: block;
     width: 100%;
-    background: #e1e1e1;
+  
     border-radius: 0.1rem;
     margin-bottom: 0.2rem;
     overflow: hidden;
@@ -807,15 +812,6 @@ overflow: hidden;
         padding:8px 10px 8px 10px;
     }
 
-.class-for-list li a, .class-for-list li{
-   
-    height: 226px;
-}
-.class-for-list2 li ,.class-for-list2 li a{
-  
-    height: 226px;
-
-}
 .pro-name{
     width:75%;
 }
@@ -828,15 +824,7 @@ overflow: hidden;
     height:2.8rem;
     line-height:2.8rem;
 }
-.class-for-list li a, .class-for-list li{
-   
-    height: 250px;
-}
-.class-for-list2 li,.class-for-list2 li a {
-  
-    height: 250px;
 
-}
 .pro-name{
     width: 75%;
 }
@@ -855,15 +843,7 @@ overflow: hidden;
     height:2.6rem;
     line-height:2.6rem;
 }
-.class-for-list li a, .class-for-list li{
-   
-    height: 250px;
-}
-.class-for-list2 li,.class-for-list2 li a {
-  
-    height: 250px;
 
-}
 .pro-name{
     width: 75%;
 }
